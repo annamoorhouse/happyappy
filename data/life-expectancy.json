@@ -1,0 +1,222 @@
+[
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "Newfoundland and Labrador",
+        "AGE": "At birth",
+        "SEX": "Males",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55087055",
+        "Coordinate": "2.1.1.1.4",
+        "Value": "75.8"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "Newfoundland and Labrador",
+        "AGE": "At birth",
+        "SEX": "Females",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55087091",
+        "Coordinate": "2.1.2.1.4",
+        "Value": "80.8"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "Prince Edward Island",
+        "AGE": "At birth",
+        "SEX": "Males",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55087199",
+        "Coordinate": "3.1.1.1.4",
+        "Value": "77.6"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "Prince Edward Island",
+        "AGE": "At birth",
+        "SEX": "Females",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55087235",
+        "Coordinate": "3.1.2.1.4",
+        "Value": "82.7"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "Nova Scotia",
+        "AGE": "At birth",
+        "SEX": "Males",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55087343",
+        "Coordinate": "4.1.1.1.4",
+        "Value": "77.1"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "Nova Scotia",
+        "AGE": "At birth",
+        "SEX": "Females",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55087379",
+        "Coordinate": "4.1.2.1.4",
+        "Value": "82.2"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "New Brunswick",
+        "AGE": "At birth",
+        "SEX": "Males",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55087487",
+        "Coordinate": "5.1.1.1.4",
+        "Value": "77.4"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "New Brunswick",
+        "AGE": "At birth",
+        "SEX": "Females",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55087523",
+        "Coordinate": "5.1.2.1.4",
+        "Value": "82.5"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "Quebec",
+        "AGE": "At birth",
+        "SEX": "Males",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55087631",
+        "Coordinate": "6.1.1.1.4",
+        "Value": "78.2"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "Quebec",
+        "AGE": "At birth",
+        "SEX": "Females",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55087667",
+        "Coordinate": "6.1.2.1.4",
+        "Value": "83.1"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "Ontario",
+        "AGE": "At birth",
+        "SEX": "Males",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55087775",
+        "Coordinate": "7.1.1.1.4",
+        "Value": "78.8"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "Ontario",
+        "AGE": "At birth",
+        "SEX": "Females",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55087811",
+        "Coordinate": "7.1.2.1.4",
+        "Value": "83.1"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "Manitoba",
+        "AGE": "At birth",
+        "SEX": "Males",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55087919",
+        "Coordinate": "8.1.1.1.4",
+        "Value": "76.8"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "Manitoba",
+        "AGE": "At birth",
+        "SEX": "Females",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55087955",
+        "Coordinate": "8.1.2.1.4",
+        "Value": "81.8"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "Saskatchewan",
+        "AGE": "At birth",
+        "SEX": "Males",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55088063",
+        "Coordinate": "9.1.1.1.4",
+        "Value": "76.9"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "Saskatchewan",
+        "AGE": "At birth",
+        "SEX": "Females",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55088099",
+        "Coordinate": "9.1.2.1.4",
+        "Value": "82"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "Alberta",
+        "AGE": "At birth",
+        "SEX": "Males",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55088207",
+        "Coordinate": "10.1.1.1.4",
+        "Value": "78.1"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "Alberta",
+        "AGE": "At birth",
+        "SEX": "Females",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55088243",
+        "Coordinate": "10.1.2.1.4",
+        "Value": "82.9"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "British Columbia",
+        "AGE": "At birth",
+        "SEX": "Males",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55088351",
+        "Coordinate": "11.1.1.1.4",
+        "Value": "78.9"
+    },
+    {
+        "Ref_Date": "2005/2007",
+        "GEO": "British Columbia",
+        "AGE": "At birth",
+        "SEX": "Females",
+        "QUINTILE": "All income groups",
+        "UNIT": "Life expectancy",
+        "Vector": "v55088387",
+        "Coordinate": "11.1.2.1.4",
+        "Value": "83.5"
+    }
+]
