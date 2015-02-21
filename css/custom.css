@@ -24,9 +24,9 @@ a:hover{
 }
 
 .banner{
-  background-color: #777777;
   max-width: 100%;
   padding: 0;
+  background-image: url("../img/vector-bkg.jpg");
 }
 
 .banner .large-12{
@@ -40,7 +40,6 @@ a:hover{
 .banner .large-12 p{
   font-family: 'Titillium Web', sans-serif;
   font-size: 1.6rem;
-  color: #ffffff;
 }
 
 .columns{
