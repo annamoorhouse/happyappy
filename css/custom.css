@@ -1,6 +1,5 @@
 .panel{
   background-color: #ffffff;
-  border: 0;
   padding-bottom: 0; }
 
 h4{
@@ -40,9 +39,10 @@ a:hover{
 .banner .large-12 p{
   font-family: 'Titillium Web', sans-serif;
   font-size: 1.6rem;
+  color: #fffffff;
 }
 
-.columns{
+.index .columns{
     padding: 1.875rem;
 }
 
@@ -53,4 +53,9 @@ footer .columns{
 
 #gender-input input{
   display: inline-block;
+}
+
+.instructions p{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1.2rem;
 }
