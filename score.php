@@ -133,7 +133,6 @@ function scoreLifeExpectancy(){
       $age = $category->Value;
     }
   }
-  echo $userGender." in ".$userProvince." have a life expectancy of ".$age.". This is ".$points." from the global baseline (".$baseline.").";
   return $age-$baseline;
 
 }
