@@ -140,23 +140,22 @@ function scoreLifeExpectancy(){
 
 function scoreBMI(){
   //Find the BMI of the user, and compare that to others.
-  $userGender="Males";
-  //$_POST["gender"];
-  $userHeight=1.84;
-  //$_POST["height"];
-  $userWeight=86.5;
-  //$_POST["weight"];
+  $userGender=$_POST["gender"];
+  $calcHeight=($_POST["height-ft"] * 12)+$_POST["height-in"];
+  $userHeight=$calcHeight*2.54/100;
+  $userWeight=($_POST["weight"]*0.453592);
+
   $userBMI=$userWeight / pow($userHeight,2);
   if($userBMI < 18.5){
     $BMIpoints=7.5;
   } elseif($userBMI > 18.5 && $userBMI < 24.9){
     $BMIpoints=20;
-
   } elseif($userBMI > 24.9 && $userBMI < 29.9){
     $BMIpoints=10;
   } elseif($userBMI > 29.9){
     $BMIpoints=5;
   }
+  echo $userBMI;
   return $BMIpoints;
   $url = 'data/bmi.json';
   $JSON = file_get_contents($url);
