@@ -50,3 +50,7 @@ footer .columns{
   padding-top: 0;
   padding-bottom: 0;
 }
+
+#gender-input input{
+  display: inline-block;
+}

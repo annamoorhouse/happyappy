@@ -42,15 +42,14 @@
       <form action="score.php" method="POST">
       <div class="panel">
           <h4>Location</h4>
-          <p>Basic information about where you live.</p>
- 
+          <p>Where do you live?</p>
             <div class="row">
               <div class="large-6 columns">
                 <label>City
                   <input name="city" type="text" />
                 </label>
               </div>
-              <div class="large-6 columns">
+              <div class="large-6 columns required">
                 <label>Province
                   <select>
                     <option value="Alberta">Alberta</option>
@@ -71,17 +70,80 @@
               </div>
             </div>
         </div>
+
       <div class="panel">
-          <h4>About you</h4>
-          <p>Basic information about you.</p>
+            <h4>Gender</h4>
+            <p>How do you identify?</p>
             <div class="row">
-              <div class="large-6 columns">
-                <label>Gender</label>
-                <input type="radio" name="gender" value="Females" id="Females"><label for="Females">Females</label>
-                <input type="radio" name="gender" value="Males" id="Males"><label for="Males">Males</label>
+              <div class="large-12 columns required" id="gender-input">
+                <input type="radio" name="gender" value="Females" id="Females"><label for="Females">Female</label>
+                <input type="radio" name="gender" value="Males" id="Males"><label for="Males">Male</label>
               </div>
             </div>
       </div>
+
+      <div class="panel">
+          <h4>Health Indicators</h4>
+          <p>Tell us about your health status.</p>
+            <div class="row">
+              <div class="large-12 columns">
+                <label> In general, would you say your health is: </label>
+                <input type="radio" name="general-health" value="Excellent" id="Excellent"><label for="Excellent">Excellent</label>
+                <input type="radio" name="general-health" value="Good" id="Good"><label for="Good">Good</label>
+                <input type="radio" name="general-health" value="Fair" id="Fair"><label for="Fair">Fair</label>
+                <input type="radio" name="general-health" value="Poor" id="Poor"><label for="Poor">Poor</label>
+                <input type="radio" name="general-health" value="VeryPoor" id="VeryPoor"><label for="VeryPoor">Very Poor</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Do you have any long-term disabilities, health problems or mental health problems (health conditions that have lasted or are expected to last 6 months or over)?</label>
+                <input type="radio" name="longterm-dis" value="Yes" id="Yes"><label for="Yes">Yes</label>
+                <input type="radio" name="longterm-dis" value="No" id="No"><label for="No">No</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <label>During the last 12 months, how often did you drink enough to feel intoxicated or drunk, that is, when your speech was slurred, you felt unsteady on your feet, or you had blurred vision? </label>
+                <input type="radio" name="drunk" value="Everyday" id="Everyday"><label for="Everyday">Everyday</label>
+                <input type="radio" name="drunk" value="Occasionally" id="Occasionally"><label for="Occasionally">Occasionally</label>
+                <input type="radio" name="drunk" value="Never" id="Never"><label for="Never">Never</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <label>How often do you smoke cigarettes?</label>
+                <input type="radio" name="cigarettes" value="Everyday" id="Everyday"><label for="Everyday">Everyday</label>
+                <input type="radio" name="cigarettes" value="Occasionally" id="Occasionally"><label for="Occasionally">Occasionally</label>
+                <input type="radio" name="cigarettes" value="Never" id="Never"><label for="Never">Never</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <label>Does anyone smoke inside your home?</label>
+                <input type="radio" name="smoke-home" value="Yes" id="Yes"><label for="Yes">Yes</label>
+                <input type="radio" name="smoke-home" value="No" id="No"><label for="No">No</label>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="large-12 columns">
+                <label>How often are you exposed to Second-hand smoke?</label>
+                <input type="radio" name="secondhand-smoke" value="Everyday" id="Everyday"><label for="Everyday">Everyday</label>
+                <input type="radio" name="secondhand-smoke" value="Occasionally" id="Occasionally"><label for="Occasionally">Occasionally</label>
+                <input type="radio" name="secondhand-smoke" value="Never" id="Never"><label for="Never">Almost Never / Never</label>
+              </div>
+            </div>
+
+      </div>
+
+
+
+
       <div class="panel">
         <input type="submit" value="submit"/>
       </div>      
