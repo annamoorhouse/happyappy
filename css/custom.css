@@ -1,0 +1,22 @@
+.panel{
+  background-color: #ffffff;
+  border: 0;
+  padding-bottom: 0;
+}
+
+h4{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.0}
+
+p{
+  line-height: 1.5;}
+
+.row .inline-list img{
+  margin-bottom: 0.45rem; }
+
+.main-box{
+  background-image: url("http://placehold.it/1000x500&text=[banner img]");
+  min-height: 20rem; }
+
