@@ -116,21 +116,26 @@ function scoreLifeExpectancy(){
   //Find the life expectancy based on province and gender, assign a score to that expectancy.
   $userProvince=$_POST["province"];
   $userGender=$_POST["gender"];
-  $url = '/data/life-expectancy.json';
+  $url = 'data/life-expectancy.json';
   $JSON = file_get_contents($url);
   $life_ex = json_decode($JSON);
+  echo $userGender;
   foreach ($life_ex as $category) {
     if($category->SEX == $userGender && $category->GEO == $userProvince){
-      if($userGender=="Males"){
+      switch($userGender){
+        case "Males":
         $baseline=68.5;
-      } else {
+        break;
+        case "Females":
         $baseline=73.5;
+        break;
       }
       $age = $category->Value;
     }
   }
+  echo $userGender." in ".$userProvince." have a life expectancy of ".$age.". This is ".$points." from the global baseline (".$baseline.").";
   return $age-$baseline;
-  //echo $userGender." in ".$userProvince." have a life expectancy of ".$age.". This is ".$points." from the global baseline (".$baseline.").";
+
 }
 
 $lifeExpectancy=scoreLifeExpectancy();

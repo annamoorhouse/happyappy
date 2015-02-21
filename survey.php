@@ -52,7 +52,7 @@
               </div>
               <div class="large-6 columns">
                 <label>Province
-                  <select>
+                  <select name="province">
                     <option value="Alberta">Alberta</option>
                     <option value="British Columbia">British Columbia</option>
                     <option value="Manitoba">Manitoba</option>
