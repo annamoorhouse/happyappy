@@ -1,14 +1,13 @@
 .panel{
   background-color: #ffffff;
   border: 0;
-  padding-bottom: 0;
-}
+  padding-bottom: 0; }
 
 h4{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
-  line-height: 2.0}
+  line-height: 2.0 }
 
 p{
   line-height: 1.5;}
@@ -16,7 +15,38 @@ p{
 .row .inline-list img{
   margin-bottom: 0.45rem; }
 
-.main-box{
-  background-image: url("http://placehold.it/1000x500&text=[banner img]");
-  min-height: 20rem; }
+a{
+  color: #FF3333;
+}
 
+a:hover{
+  color: #FF3333;
+}
+
+.banner{
+  max-width: 100%;
+  padding: 0;
+  background-image: url("../img/vector-bkg.jpg");
+}
+
+.banner .large-12{
+  margin: 0 auto;
+  max-width: 62.50rem;
+  min-height: 20rem;
+  padding: 1.875rem;
+  text-align: center;
+}
+
+.banner .large-12 p{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.6rem;
+}
+
+.columns{
+    padding: 1.875rem;
+}
+
+footer .columns{
+  padding-top: 0;
+  padding-bottom: 0;
+}
