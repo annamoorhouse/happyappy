@@ -34,9 +34,9 @@ a:hover{
 }
 
 .index .banner .large-12, .survey .banner .large-12{
-  margin: 0 auto;
+  /* margin: 0 auto; */
   max-width: 62.50rem;
-  padding: 1.875rem;
+  /* padding: 1.875rem; */
   text-align: center;
 }
 

@@ -257,7 +257,6 @@
                   </label>
           </div>
         </div>
-<<<<<<< HEAD
         <div class="row">
         <div class="medium-12 columns">
           <h4>Psychological Wellbeing</h4>
@@ -324,11 +323,6 @@
                   </label>
           </div>
         </div>
-
-        
-=======
-
->>>>>>> 1bd5c3b0b88f834609a61480695e89d3a6225af3
       <div class="row">
         <div class="medium-12 columns" style="text-align: center;">
           <input class="medium alert radius button" type="submit" value="Submit"/>
