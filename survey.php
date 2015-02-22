@@ -17,7 +17,7 @@
            
           <li class="name">
             <h1>
-              <a href="#">
+              <a href="/">
                 <img src="img/wordmark.png" alt="beehappy wordmark">
               </a>
             </h1>
@@ -147,7 +147,7 @@
         <div class="row">
           <div class="medium-12 columns">
                   <label>Do you have any long-term disabilities, health problems or mental health problems (health conditions that have lasted or are expected to last 6 months or over)?
-                    <select name="health2" autocomplete="off">
+                    <select name="health2" autocomplete="off" required>
                       <option value="" selected="selected" disabled="disabled">Select</option>
                       <option value="0">Yes</option>
                       <option value="20">No</option>
@@ -159,7 +159,7 @@
         <div class="row">
           <div class="medium-12 columns">
                   <label>During the last 12 months, how often did you drink enough to feel intoxicated or drunk, that is, when your speech was slurred, you felt unsteady on your feet, or you had blurred vision?
-                    <select name="health3" autocomplete="off">
+                    <select name="health3" autocomplete="off" required>
                       <option value="" selected="selected" disabled="disabled">Select</option>
                       <option value="5">Everyday</option>
                       <option value="2.5">Occasionally</option>
@@ -172,7 +172,7 @@
         <div class="row">
           <div class="medium-12 columns">
                   <label>How often do you smoke cigarettes?
-                    <select name="health4" autocomplete="off">
+                    <select name="health4" autocomplete="off" required>
                       <option value="" selected="selected" disabled="disabled">Select</option>
                       <option value="0">Everyday</option>
                       <option value="2.5">Occasionally</option>
@@ -185,7 +185,7 @@
         <div class="row">
           <div class="medium-12 columns">
                   <label>Does anyone smoke inside your home?
-                    <select name="health5" autocomplete="off">
+                    <select name="health5" autocomplete="off" required>
                       <option value="" selected="selected" disabled="disabled">Select</option>
                       <option value="0">Yes</option>
                       <option value="5">No</option>
@@ -197,7 +197,7 @@
         <div class="row">
           <div class="medium-12 columns">
                   <label>How often are you exposed to Second-hand smoke?
-                    <select name="health6" autocomplete="off">
+                    <select name="health6" autocomplete="off" required>
                       <option value="" selected="selected" disabled="disabled">Select</option>
                       <option value="0">Everyday</option>
                       <option value="2.5">Occasionally</option>
@@ -216,7 +216,7 @@
       <div class="row">
           <div class="medium-12 columns">
                   <label>On a scale of 0 to 10, how happy a person do you consider youself to be?
-                    <select name="psych1" autocomplete="off">
+                    <select name="psych1" autocomplete="off" required>
                       <option value="" selected="selected" disabled="disabled">Select</option>s
                       <option value="0">0</option>
                       <option value="2">1</option>
@@ -237,7 +237,7 @@
         <div class="row">
           <div class="medium-12 columns">
                   <label>Do you have any long-term disabilities, health problems or mental health problems (health conditions that have lasted or are expected to last 6 months or over)?
-                    <select name="psych2" autocomplete="off">
+                    <select name="psych2" autocomplete="off" required>
                       <option value="" selected="selected" disabled="disabled">Select</option>
                       <option value="4">Very poor</option>
                       <option value="8">Poor</option>
@@ -253,7 +253,7 @@
           <div class="medium-12 columns">
                   <label>How much do you enjoy life?
                     <select name="psych3" autocomplete="off">
-                      <option value="" selected="selected" disabled="disabled">Select</option>
+                      <option value="" selected="selected" disabled="disabled" required>Select</option>
                       <option value="5">Not at all</option>
                       <option value="10">A little</option>
                       <option value="15">Quite a lot</option>
@@ -266,7 +266,7 @@
           <div class="medium-12 columns">
                   <label>During the last year, would you describe your life as:
                     <select name="psych4" autocomplete="off">
-                      <option value="" selected="selected" disabled="disabled">Select</option>
+                      <option value="" selected="selected" disabled="disabled" required>Select</option>
                       <option value="5">Very stressful</option>
                       <option value="10">Moderately stressful</option>
                       <option value="15">Somewhat stressful</option>
@@ -279,7 +279,7 @@
           <div class="medium-12 columns">
                   <label>How many people are so close to you that you can count on them if you are sick?
                     <select name="psych5" autocomplete="off">
-                      <option value="" selected="selected" disabled="disabled">Select</option>
+                      <option value="" selected="selected" disabled="disabled" required>Select</option>
                       <option value="20">More than 8</option>
                       <option value="17.5">6 to 8</option>
                       <option value="15">3 to 5</option>
@@ -298,7 +298,7 @@
       <div class="row">
           <div class="medium-12 columns">
                   <label>Do you feel responsible for conserving the natural environment? 
-                    <select name="eco1" autocomplete="off">
+                    <select name="eco1" autocomplete="off" required>
                       <option value="" selected="selected" disabled="disabled">Select</option>s
                       <option value="15">Highly responsible</option>
                       <option value="25">Somewhat responsible</option>
@@ -316,7 +316,7 @@
       <div class="row">
           <div class="medium-12 columns">
                   <label>Visit green Spaces or nature parks  
-                    <select name="eco2" autocomplete="off">
+                    <select name="eco2" autocomplete="off" required>
                       <option value="" selected="selected" disabled="disabled">Select</option>s
                       <option value="30">Always</option>
                       <option value="20">Frequently</option>
@@ -329,7 +329,7 @@
       <div class="row">
           <div class="medium-12 columns">
                   <label>Travel Sustainably (Walk, bicycle, public transport) 
-                    <select name="eco3" autocomplete="off">
+                    <select name="eco3" autocomplete="off" required>
                       <option value="" selected="selected" disabled="disabled">Select</option>s
                       <option value="30">Always</option>
                       <option value="20">Frequently</option>
@@ -370,8 +370,10 @@
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.abide.js">
     <script>
       $(document).foundation();
+      $(document).foundation('abide','events'); 
     </script>
 
   </body>

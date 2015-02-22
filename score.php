@@ -16,7 +16,7 @@
         <ul class="title-area">
           <li class="name">
             <h1>
-              <a href="#">
+              <a href="/">
                 <img src="img/wordmark.png" alt="beehappy wordmark">
               </a>
             </h1>
