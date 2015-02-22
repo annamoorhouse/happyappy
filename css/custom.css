@@ -6,7 +6,7 @@ h4{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
   font-size: 1.8rem;
-  line-height: 2.0 }
+  line-height: 2.0; }
 
 p{
   line-height: 1.5;}
@@ -36,7 +36,7 @@ a:hover{
 .index .banner .large-12, .survey .banner .large-12{
   margin: 0 auto;
   max-width: 62.50rem;
-  padding: C
+  padding: 1.875rem;
   text-align: center;
 }
 
@@ -74,7 +74,7 @@ footer .columns{
   font-size: 1.2rem;
 }
 
-.survey h4, .score h4{{
+.survey h4, .score h4{
   color: #f04124;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
