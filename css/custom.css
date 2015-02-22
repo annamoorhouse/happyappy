@@ -3,6 +3,7 @@ body.survey{
   overflow-x: hidden;
 }
 
+
 h4{
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 600;
@@ -34,6 +35,10 @@ a:hover{
   background-image: url("../img/vector-bkg.jpg");
 }
 
+.survey .banner{
+  background-image: url("../img/vector-bkg-light.jpg");
+}
+
 .index .banner .medium-12, .survey .banner .medium-12,  .happy .banner .medium-12{
   margin: 0 auto;
   max-width: 62.50rem;
@@ -52,7 +57,7 @@ a:hover{
 }
 
 .index .columns, .happy .columns{
-  padding: 1.875rem 0;
+  padding: 1.875rem;
 }
 
 .survey .columns{
@@ -60,7 +65,7 @@ a:hover{
   padding-right: 1.875rem;
 }
 
-.index footer .columns{
+.index footer .columns, .happy footer .columns{
   padding-top: 0;
   padding-bottom: 0;
 }
