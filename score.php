@@ -14,7 +14,6 @@
        
       <nav class="top-bar" data-topbar>
         <ul class="title-area">
-           
           <li class="name">
             <h1>
               <a href="#">
