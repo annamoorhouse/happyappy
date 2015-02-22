@@ -208,10 +208,11 @@
                   </label>
           </div>
         </div>
-
-
+        
       <div class="row">
-        <input type="submit" value="submit"/>
+        <div class="medium-12 columns" style="text-align: center;">
+          <input class="medium alert radius button" type="submit" value="Submit"/>
+        </div>
       </div>      
 
           </form>
