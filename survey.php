@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BeeHappy | Welcome</title>
+    <title>HappyAppy | Survey</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <script src="js/vendor/modernizr.js"></script>
@@ -19,7 +19,7 @@
           <li class="name">
             <h1>
               <a href="#">
-                Top Bar Title
+                <img src="img/wordmark.png" alt="beehappy wordmark">
               </a>
             </h1>
           </li>
@@ -31,9 +31,9 @@
           <ul class="left">
             <li><a class="active" href="#">Home</a></li>
             <li class="divider"></li>
-            <li><a href="#">Get Your Score</a></li>
+            <li><a href="survey.php">Get Your Score</a></li>
             <li class="divider"></li>
-            <li><a href="#">Are You Happy?</a></li>
+            <li><a href="happy.html">Are You Happy?</a></li>
           </ul>
     
         </section>
