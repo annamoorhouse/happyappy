@@ -135,7 +135,6 @@
                       <option value="20">Excellent</option>
                       <option value="15">Good</option>
                       <option value="10">Fair</option>
-                      <option value="5">Fair</option>
                       <option value="0">Very Poor</option>
                     </select>
                   </label>
