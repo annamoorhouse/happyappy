@@ -209,8 +209,9 @@ $totalScore=round(($dHealth+$dPsych+$dEco)/3);
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         <div class="fb-share-button" data-href="http://yourbc.ca/beehappy" data-layout="button"></div>
         </center>
-
       </div>
+</div>
+<div class="row">
       <div class="medium-12 columns">
       <h4>Details</h4>
       </div>
