@@ -201,7 +201,7 @@ $dPsych=round($surveyPsych);
 $dEco=round($proximityToParks+$surveyEco);
 $totalScore=round(($dHealth+$dPsych+$dEco)/3);
 ?>
-      <div class="row">
+<div class="row banner">
       <div class="medium-12 columns">
         <center><h1>Your happy score is:</h1>
         <div id="bigrating"><?php echo $totalScore; ?></div>
@@ -209,12 +209,13 @@ $totalScore=round(($dHealth+$dPsych+$dEco)/3);
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         <div class="fb-share-button" data-href="http://yourbc.ca/beehappy" data-layout="button"></div>
         </center>
-
       </div>
+</div>
+<div class="row">
       <div class="medium-12 columns">
       <h4>Details</h4>
       </div>
-      </div>
+</div>
       <div class="row" data-equalizer>
        <div class="medium-4 columns">
           <div class="panel" data-equalizer-watch>
