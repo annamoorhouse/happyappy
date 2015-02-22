@@ -37,8 +37,7 @@
     
         </section>
       </nav>
-      <div class="row">
-      <div class="medium-12 columns">
+
 <?php
 
 /* 
@@ -155,7 +154,6 @@ function scoreBMI(){
   } elseif($userBMI > 29.9){
     $BMIpoints=5;
   }
-  echo $userBMI;
   return $BMIpoints;
   $url = 'data/bmi.json';
   $JSON = file_get_contents($url);
@@ -177,13 +175,18 @@ function scoreBMI(){
 $lifeExpectancy=scoreLifeExpectancy();
 $proximityToParks=scoreProxToParks(); 
 $BMI=scoreBMI();
-
-echo "Life expectancy score: ".$lifeExpectancy."/20<br/>";
-echo "BMI score: ".$BMI."/20<br/>";
-
+$dHealth=round($lifeExpectancy+$BMI);
 ?>
-</div>
-</div>
+      <div class="row">
+      <div class="medium-12 columns">
+        <center><h1>Your subset GNH Rating is</h1>
+        <div id="bigrating"><?php echo $dHealth; ?></div>
+        <a class="button" href="/">Share on Twitter</a><a class="button" href="/">Share on Facebook</a> 
+        </center>
+
+      </div>
+      </div>
+
        <footer class="row">
         <div class="large-12 columns">
           <div class="row">
