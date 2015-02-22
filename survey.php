@@ -40,7 +40,7 @@
       </nav>
 
       <div class="row banner">
-        <div class="large-12 column.large-centered">
+        <div class="medium-12 column.medium-centered">
           <div class="instructions">
            <p>Work your way through the app answering questions about your lifestyle. There are a few questions about you and your location that will be used to incorporate government data related to your region.<br/><br/>Please choose the best answer available for each question.</p>
           </div> 
@@ -344,21 +344,20 @@
         <div class="medium-12 columns" style="text-align: center;">
           <input class="medium alert radius button" type="submit" value="Submit"/>
         </div>
-      </div>      
+      </div>    
 
-          </form>
+    </form>
       </div>
   </div>
-</div>
 <hr>
        <footer class="row">
-        <div class="large-12 columns">
+        <div class="medium-12 columns">
           <div class="row">
-            <div class="large-6 columns">
+            <div class="medium-6 columns">
               <p style="font-size: 70%;">© 2015 <a href="http://www.yppofbc.ca/" target="_blank" style="color: #000000;">Your Political Party of BC</a></p>
             </div>
             
-            <div class="large-6 columns">
+            <div class="medium-6 columns">
             <ul class="inline-list right">
               <li><a href="http://twitter.com/yppofbc" target="_blank"><img src="img/icons/twitter.png" alt="twitter"></a></li>
               <li><a href="http://facebook.com/yppbc" target="_blank"><img src="img/icons/facebook.png" alt="facebook"></a></li>
