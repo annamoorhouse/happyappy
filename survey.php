@@ -47,7 +47,7 @@
       </div>
 <br>
       <div class="row">
-      <form action="score.php" method="POST">
+      <form action="score.php" method="POST" data-abide>
         
         <div class="row">
           <div class="medium-12 columns">
@@ -60,10 +60,10 @@
               <label>Location</label>
           </div>
           <div class="medium-5 columns">
-              <input name="city" placeholder="city" type="text" />
+              <input name="city" placeholder="city" type="text" required />
           </div>
           <div class="medium-5 columns required">
-              <select name="province">
+              <select name="province" required>
                 <option value="Alberta">Alberta</option>
                 <option value="British Columbia">British Columbia</option>
                 <option value="Manitoba">Manitoba</option>
@@ -86,9 +86,9 @@
             <label>Gender</label>
           </div>
           <div class="medium-10 columns" id="gender-input">
-            <input type="radio" name="gender" value="Females" id="Females"><label for="Females">Female</label>
-            <input type="radio" name="gender" value="Males" id="Males"><label for="Males">Male</label>
-            <input type="radio" name="gender" value="Custom" id="Custom">
+            <input type="radio" name="gender" value="Females" id="Females" required><label for="Females">Female</label>
+            <input type="radio" name="gender" value="Males" id="Males" required><label for="Males">Male</label>
+            <input type="radio" name="gender" value="Custom" id="Custom" required>
             <input type="text" name="gender-custom" value="" id="Custom" placeholder="fill in the blank" style="max-width: 10rem;"> 
           </div>
         </div>
@@ -98,7 +98,7 @@
             <label>Age</label>
           </div>
           <div class="medium-10 columns">
-            <input type="text" name="age" value="" id="Years" class="left inline" placeholder="years">
+            <input type="text" name="age" value="" id="Years" class="left inline" placeholder="years" required>
           </div>
         </div>
 
@@ -107,10 +107,10 @@
             <label>Height</label>
           </div>
           <div class="medium-5 columns">
-            <input type="text" name="height-ft" value="" id="Feet" placeholder="feet">
+            <input type="text" name="height-ft" value="" id="Feet" placeholder="feet" required>
           </div>
           <div class="medium-5 columns">
-            <input type="text" name="height-in" value="" id="Inches" placeholder="inches">
+            <input type="text" name="height-in" value="" id="Inches" placeholder="inches" required>
           </div>
         </div>
 
@@ -119,7 +119,7 @@
             <label>Weight</label>
           </div>
           <div class="medium-10 columns">
-            <input type="text" name="weight" value="" id="Pounds" placeholder="lbs">
+            <input type="text" name="weight" value="" id="Pounds" placeholder="lbs" required>
           </div>
         </div>
 
@@ -132,7 +132,7 @@
       <div class="row">
           <div class="medium-12 columns">
                   <label>In general, would you say your health is:
-                    <select name="health1" autocomplete="off">
+                    <select name="health1" autocomplete="off" required>
                       <option value="" selected="selected" disabled="disabled">Select</option>s
                       <option value="20">Excellent</option>
                       <option value="15">Good</option>
