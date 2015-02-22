@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BeeHappy | Welcome</title>
+    <title>BeeHappy | Get Your Score</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <script src="js/vendor/modernizr.js"></script>
@@ -42,7 +42,7 @@
       <div class="row banner">
         <div class="medium-12 column.medium-centered">
           <div class="instructions">
-           <p>Work your way through the app answering questions about your lifestyle. There are a few questions about you and your location that will be used to incorporate government data related to your region.<br/><br/>Please choose the best answer available for each question.</p>
+           <p><strong>Work your way through the app answering questions about your lifestyle.</strong> There are a few questions about you and your location that will be used to incorporate government data related to your region.<br/><br/>Please choose the best answer available for each question.</p>
           </div> 
         </div>
       </div>
@@ -305,7 +305,8 @@
         </div>
       <div class="row">
         <div class="medium-12 columns" style="text-align: center;">
-          <input class="medium alert radius button" type="submit" value="Submit"/>
+          <input class="medium alert radius button" type="submit" value="Submit" style="margin-left: 100px;"/>
+           <img src="img/bee-03.png" alt="bee">
         </div>
       </div>    
 
