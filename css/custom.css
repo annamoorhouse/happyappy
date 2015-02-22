@@ -1,5 +1,6 @@
 body.survey{
   background-color: #f9f9f9;
+  overflow-x: hidden;
 }
 
 h4{
@@ -76,8 +77,8 @@ a:hover{
 
 .survey h4, .score h4{
   color: #f04124;
-  margin-bottom: 1.5rem;
-  margin-top: 1.5rem;
+  /*margin-bottom: 1.5rem;
+  margin-top: 1.5rem;*/
   border-bottom: 4px solid #e1e1e1;
 }
 
