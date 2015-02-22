@@ -34,22 +34,10 @@
             <li class="divider"></li>
             <li><a href="#">Are You Happy?</a></li>
           </ul>
-    
         </section>
       </nav>
 
 <?php
-
-/* 
-function _getDistance(lat1,lng1,lat2,lng2){
-    var R = 6371; // Radius of the earth in km
-    var dLat = _deg2rad(lat2-lat1);
-    var dLon = _deg2rad(lng2-lng1); 
-    var a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.cos(_deg2rad(lat1)) * Math.cos(_deg2rad(lat2)) * Math.sin(dLon/2) * Math.sin(dLon/2); 
-    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
-    var d = R * c; // Distance in km
-    return d;
-} */
 
 function distance($lat1, $lon1, $lat2, $lon2, $unit) {
   $theta = $lon1 - $lon2;
@@ -71,7 +59,7 @@ function scoreProxToParks(){
   $userCity=$_POST["city"];
   $userLatLng=grabUserLocation($userCity);
   $hits=0;
-
+  
   $url = 'http://geogratis.gc.ca/services/geolocation/en/locate?q=national%20park';
   $JSON = file_get_contents($url);
   $parks = json_decode($JSON);
