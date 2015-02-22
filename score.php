@@ -59,7 +59,7 @@ function scoreProxToParks(){
   $userCity=$_POST["city"];
   $userLatLng=grabUserLocation($userCity);
   $hits=0;
-  
+
   $url = 'http://geogratis.gc.ca/services/geolocation/en/locate?q=national%20park';
   $JSON = file_get_contents($url);
   $parks = json_decode($JSON);
@@ -158,17 +158,42 @@ function scoreBMI(){
       }
     }
   }
-
 }
+
+/* =========================================================================== */
+//Add up all the health stuff
+
+function scoreHealth(){
+  //Find the BMI of the user, and compare that to others.
+  return $_POST['health1']+$_POST['health2']+$_POST['health3']+$_POST['health4']+$_POST['health5']+$_POST['health6'];
+}
+
+function scorePsych(){
+  return $_POST['psych1']+$_POST['psych2']+$_POST['psych3']+$_POST['psych4']+$_POST['psych5'];
+}
+
+function scoreEco(){
+  return $_POST['eco1']+$_POST['eco2']+$_POST['eco3'];
+}
+
+
+
 $lifeExpectancy=scoreLifeExpectancy();
 $proximityToParks=scoreProxToParks(); 
+$surveyHealth=scoreHealth();
+$surveyPsych=scorePsych();
+$surveyEco=scoreEco();
 $BMI=scoreBMI();
-$dHealth=round($lifeExpectancy+$BMI);
+
+$dHealth=round($lifeExpectancy+$BMI+$surveyHealth);
+$dPsych=round($surveyPsych);
+$dEco=round($proximityToParks+$surveyEco);
+$totalScore=round(($dHealth+$dPsych+$dEco)/3);
 ?>
       <div class="row">
       <div class="medium-12 columns">
-        <center><h1>Your (sort of) GNH Rating is</h1>
-        <div id="bigrating"><?php echo $dHealth; ?></div>
+        <center><h1>Your happy score is:</h1>
+        <div id="bigrating"><?php echo $totalScore; ?></div>
         <a class="button" href="/">Share on Twitter</a><a class="button" href="/">Share on Facebook</a> 
         </center>
 
@@ -176,8 +201,29 @@ $dHealth=round($lifeExpectancy+$BMI);
       <div class="medium-12 columns">
       <h4>Details</h4>
       </div>
-      <div class="medium-4">
-
+      </div>
+      <div class="row" data-equalizer>
+       <div class="medium-4 columns">
+          <div class="panel" data-equalizer-watch>
+            <h5>Health</h5>
+            <p>Your health score is calculated using government datasets for life expectancy and body mass index, as well as your input.</p>
+            <center><div class="mediumrating"><?php echo $dHealth; ?></div></center>
+          </div>
+        </div>
+        <div class="medium-4 columns">
+          <div class="panel" data-equalizer-watch>
+            <h5>Pyschological Well Being</h5>
+            <p>This score is solely based on your answers and is based on the GNH model.</p>
+            <center><div class="mediumrating"><?php echo $dPsych; ?></div></center>
+          </div>
+        </div>
+        <div class="medium-4 columns">
+          <div class="panel" data-equalizer-watch>
+            <h5>Ecological Diversity</h5>
+            <p>This score is based on datasets around proximity to parks, as well as your input.</p>
+            <center><div class="mediumrating"><?php echo $dEco; ?></div></center>
+          </div>
+        </div>
       </div>
       </div>
        <footer class="row">
