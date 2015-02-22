@@ -96,3 +96,5 @@ select {
 }
 
 .mediumrating { font-size: 5rem; }
+
+.panel.nothing { background: none; border: 0; }

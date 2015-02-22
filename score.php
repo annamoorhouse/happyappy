@@ -240,6 +240,19 @@ $totalScore=round(($dHealth+$dPsych+$dEco)/3);
         </div>
       </div>
       </div>
+      <div class="row">
+      <div class="medium-8 columns">
+        <div class="panel nothing">
+        <p style="font-weight: bold; color: #FF3333;">Your Happy Score is an average of the score of all three of the domains which were included in the app.</p>
+        <p>Gross National Happiness normally takes into account nine domains to determine whether a person is considered happy or not. Instead of averaging respondents’ scores in the domains, it looks at whether they achieved certain thresholds in each of the domains. A person is considered happy if they have achieved the thresholds in 7 of the 9 domains.</p>
+        <p>If you would like to see us develop this app further, and use guidelines more closely in line with those of the Gross National Happiness measurement, please let us know!</p>
+        <p>Thanks for participating and Bee Happy!!</p>
+        </div>
+      </div>
+      <div class="medium-4 columns">
+        <img src="img/bee-04.png"/>
+      </div>
+      </div>
        <footer class="row">
         <div class="large-12 columns">
           <div class="row">
