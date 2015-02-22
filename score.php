@@ -11,6 +11,17 @@
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
   </head>
   <body class="score">
+
+<!--Facebook Share Button Script-->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=554679754584890&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+<!--End of Facebook Share Button Script-->
        
       <nav class="top-bar" data-topbar>
         <ul class="title-area">
@@ -195,7 +206,9 @@ $totalScore=round(($dHealth+$dPsych+$dEco)/3);
       <div class="medium-12 columns">
         <center><h1>Your happy score is:</h1>
         <div id="bigrating"><?php echo $totalScore; ?></div>
-        <a class="button" href="/">Share on Twitter</a><a class="button" href="/">Share on Facebook</a> 
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://yourbc.ca/beehappy" data-via="yppofbc" data-count="none">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <div class="fb-share-button" data-href="http://yourbc.ca/beehappy" data-layout="button"></div>
         </center>
 
       </div>
