@@ -208,7 +208,101 @@
                   </label>
           </div>
         </div>
+      <div class="row">
+        <div class="medium-12 columns">
+          <h4>Psychological Well being</h4>
+        </div>
+      </div>
 
+      <div class="row">
+          <div class="medium-12 columns">
+                  <label>On a scale of 0 to 10, how happy a person do you consider youself to be?
+                    <select name="happyscale" autocomplete="off">
+                      <option value="" selected="selected" disabled="disabled">Select</option>s
+                      <option value="0">0</option>
+                      <option value="2">1</option>
+                      <option value="4">2</option>
+                      <option value="6">3</option>
+                      <option value="8">4</option>
+                      <option value="10">5</option>
+                      <option value="12">6</option>
+                      <option value="14">7</option>
+                      <option value="16">8</option>
+                      <option value="18">9</option>
+                      <option value="20">10</option>
+                    </select>
+                  </label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="medium-12 columns">
+                  <label>Do you have any long-term disabilities, health problems or mental health problems (health conditions that have lasted or are expected to last 6 months or over)?
+                    <select name="qualityoflife" autocomplete="off">
+                      <option value="" selected="selected" disabled="disabled">Select</option>
+                      <option value="4">Very poor</option>
+                      <option value="8">Poor</option>
+                      <option value="12">Neither poor nor good</option>
+                      <option value="16">Good</option>
+                      <option value="20">Very good</option>
+                    </select>
+                  </label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="medium-12 columns">
+                  <label>How much do you enjoy life?
+                    <select name="enjoylife" autocomplete="off">
+                      <option value="" selected="selected" disabled="disabled">Select</option>
+                      <option value="5">Not at all</option>
+                      <option value="10">A little</option>
+                      <option value="15">Quite a lot</option>
+                      <option value="20">An extreme amount</option>
+                    </select>
+                  </label>
+          </div>
+        </div>
+       <div class="row">
+          <div class="medium-12 columns">
+                  <label>
+                    <select name="enjoylife" autocomplete="off">
+                      <option value="" selected="selected" disabled="disabled">Select</option>
+                      <option value="5">Not at all</option>
+                      <option value="10">A little</option>
+                      <option value="15">Quite a lot</option>
+                      <option value="20">An extreme amount</option>
+                    </select>
+                  </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="medium-12 columns">
+                  <label>During the last year, would you describe your life as:
+                    <select name="enjoylife" autocomplete="off">
+                      <option value="" selected="selected" disabled="disabled">Select</option>
+                      <option value="5">Very stressful</option>
+                      <option value="10">Moderately stressful</option>
+                      <option value="15">Somewhat stressful</option>
+                      <option value="20">Not at all stressful</option>
+                    </select>
+                  </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="medium-12 columns">
+                  <label>How many people are so close to you that you can count on them if you are sick?
+                    <select name="enjoylife" autocomplete="off">
+                      <option value="" selected="selected" disabled="disabled">Select</option>
+                      <option value="20">More than 8</option>
+                      <option value="17.5">6 to 8</option>
+                      <option value="15">3 to 5</option>
+                      <option value="10">1 to 2</option>
+                      <option value="0">0</option>
+                    </select>
+                  </label>
+          </div>
+        </div>
       <div class="row">
         <div class="medium-12 columns" style="text-align: center;">
           <input class="medium alert radius button" type="submit" value="Submit"/>
