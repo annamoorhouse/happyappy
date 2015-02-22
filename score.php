@@ -119,7 +119,6 @@ function scoreLifeExpectancy(){
   $url = 'data/life-expectancy.json';
   $JSON = file_get_contents($url);
   $life_ex = json_decode($JSON);
-  echo $userGender;
   foreach ($life_ex as $category) {
     if($category->SEX == $userGender && $category->GEO == $userProvince){
       switch($userGender){
@@ -133,17 +132,54 @@ function scoreLifeExpectancy(){
       $age = $category->Value;
     }
   }
-  return $age-$baseline;
+  $points=10+($age-$baseline)*.77;
+  return $points;
+}
+/* =========================================================================== */
+//BMI SCORE
+
+function scoreBMI(){
+  //Find the BMI of the user, and compare that to others.
+  $userGender=$_POST["gender"];
+  $calcHeight=($_POST["height-ft"] * 12)+$_POST["height-in"];
+  $userHeight=$calcHeight*2.54/100;
+  $userWeight=($_POST["weight"]*0.453592);
+
+  $userBMI=$userWeight / pow($userHeight,2);
+  if($userBMI < 18.5){
+    $BMIpoints=7.5;
+  } elseif($userBMI > 18.5 && $userBMI < 24.9){
+    $BMIpoints=20;
+  } elseif($userBMI > 24.9 && $userBMI < 29.9){
+    $BMIpoints=10;
+  } elseif($userBMI > 29.9){
+    $BMIpoints=5;
+  }
+  echo $userBMI;
+  return $BMIpoints;
+  $url = 'data/bmi.json';
+  $JSON = file_get_contents($url);
+  $BMI = json_decode($JSON);
+  foreach ($BMI as $category) {
+    if($category->SEX == $userGender && $category->GEO == $userProvince){
+      switch($userGender){
+        case "Males":
+        $baseline=68.5;
+        break;
+        case "Females":
+        $baseline=73.5;
+        break;
+      }
+    }
+  }
 
 }
-
 $lifeExpectancy=scoreLifeExpectancy();
 $proximityToParks=scoreProxToParks(); 
+$BMI=scoreBMI();
 
-echo "Life expectancy over/under global average: ".$lifeExpectancy."<br/>";
-echo "Number of national/provincial parks within 200km: ".$proximityToParks."<br/>";
-
-
+echo "Life expectancy score: ".$lifeExpectancy."/20<br/>";
+echo "BMI score: ".$BMI."/20<br/>";
 
 ?>
 </div>
