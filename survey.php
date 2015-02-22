@@ -18,7 +18,7 @@
           <li class="name">
             <h1>
               <a href="#">
-                Top Bar Title
+                <img src="img/wordmark.png" alt="beehappy wordmark">
               </a>
             </h1>
           </li>
@@ -30,9 +30,9 @@
           <ul class="left">
             <li><a class="active" href="#">Home</a></li>
             <li class="divider"></li>
-            <li><a href="#">Get Your Score</a></li>
+            <li><a href="survey.php">Get Your Score</a></li>
             <li class="divider"></li>
-            <li><a href="#">Are You Happy?</a></li>
+            <li><a href="happy.html">Are You Happy?</a></li>
           </ul>
     
         </section>
