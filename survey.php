@@ -12,7 +12,7 @@
   </head>
   <body class="survey">
        
-      <nav class="top-bar" data-topbar>
+     <nav class="top-bar" data-topbar>
         <ul class="title-area">
            
           <li class="name">
@@ -24,9 +24,7 @@
           </li>
           <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
         </ul>
-     
         <section class="top-bar-section">
-           
           <ul class="left">
             <li><a class="active" href="http://yourbc.ca/beehappy">Home</a></li>
             <li class="divider"></li>
@@ -41,7 +39,7 @@
       <div class="row banner">
         <div class="medium-12 column.medium-centered">
           <div class="instructions">
-           <p><strong>Work your way through the app answering questions about your lifestyle.</strong><br/>There are a few questions about you and your location that will be used to incorporate government data related to your region.<br/><br/>Please choose the best answer available for each question.</p>
+           <p><strong>Work your way through the app answering questions about your lifestyle.</strong><br/>There are a few questions about you and your location that will be used to incorporate government data related to your region.</p>
           </div> 
         </div>
       </div>
@@ -356,6 +354,7 @@
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/foundation/foundation.abide.js">
+    <script src="js/foundation/foundation.topbar.js">
     <script>
       $(document).foundation();
       $(document).foundation('abide','events'); 
