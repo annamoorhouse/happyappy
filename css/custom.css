@@ -72,6 +72,7 @@ footer .columns{
 .instructions p{
   font-family: 'Titillium Web', sans-serif;
   font-size: 1.2rem;
+  padding: 1.875rem;
 }
 
 .survey h4, .score h4{

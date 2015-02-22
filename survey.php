@@ -42,7 +42,7 @@
       <div class="row banner">
         <div class="large-12 column.large-centered">
           <div class="instructions">
-           <p>Work your way through the app answering questions about your lifestyle. There are a few questions about you and your location that will be used to incorporate government data related to your region. Please choose the best answer available for each question.</p>
+           <p>Work your way through the app answering questions about your lifestyle. There are a few questions about you and your location that will be used to incorporate government data related to your region.<br/><br/>Please choose the best answer available for each question.</p>
           </div> 
         </div>
       </div>
@@ -208,7 +208,7 @@
                   </label>
           </div>
         </div>
-        
+
       <div class="row">
         <div class="medium-12 columns" style="text-align: center;">
           <input class="medium alert radius button" type="submit" value="Submit"/>
