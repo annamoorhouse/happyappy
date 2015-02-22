@@ -24,7 +24,7 @@ a:hover{
   color: #FF3333;
 }
 
-.index .banner, .survey .banner, .happy .banner{
+.index .banner, .survey .banner, .happy .banner, .score .banner {
   max-width: 100%;
   padding: 0;
   background-color: #ffffff;
