@@ -226,7 +226,7 @@ $totalScore=round(($dHealth+$dPsych+$dEco)/3);
         </div>
         <div class="medium-4 columns">
           <div class="panel" data-equalizer-watch>
-            <h5>Pyschological Well Being</h5>
+            <h5>Psychological Well Being</h5>
             <p>This score is solely based on your answers and is based on the GNH model.</p>
             <center><div class="mediumrating"><?php echo $dPsych; ?></div></center>
           </div>
