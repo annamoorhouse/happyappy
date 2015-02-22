@@ -33,18 +33,18 @@ a:hover{
   background-image: url("../img/vector-bkg.jpg");
 }
 
-.index .banner .large-12, .survey .banner .large-12{
+.index .banner .medium-12, .survey .banner .medium-12{
   margin: 0 auto;
   max-width: 62.50rem;
   padding: 1.875rem;
   text-align: center;
 }
 
-.index .banner .large-12{
+.index .banner .medium-12{
   min-height: 20rem;
 }
 
-.index .banner .large-12 p{
+.index .banner .medium-12 p{
   font-family: 'Titillium Web', sans-serif;
   font-size: 1.6rem;
   color: #fffffff;
@@ -58,7 +58,6 @@ a:hover{
     padding-left: 1.875rem;
     padding-right: 1.875rem;
 }
-
 
 footer .columns{
   padding-top: 0;
