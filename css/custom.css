@@ -31,12 +31,8 @@ a:hover{
   border-bottom: #f1f1f1 solid 1px;
 }
 
-.index .banner, .happy .banner{
+.banner{
   background-image: url("../img/vector-bkg.jpg");
-}
-
-.survey .banner{
-  background-image: url("../img/vector-bkg-light.jpg");
 }
 
 .index .banner .medium-12, .survey .banner .medium-12,  .happy .banner .medium-12{
@@ -46,12 +42,12 @@ a:hover{
   text-align: center;
 }
 
-.index .banner .medium-12, .happy .banner .medium-12{
+.banner .medium-12{
   min-height: 20rem;
 }
 
-.index .banner .medium-12 p, .happy .banner .medium-12 p {
-  font-family: 'Titillium Web', sans-serif;
+.banner .medium-12 p{
+   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.6rem;
   color: #fffffff;
 }
@@ -75,9 +71,13 @@ a:hover{
 }
 
 .instructions p{
-  font-family: 'Titillium Web', sans-serif;
   font-size: 1.2rem;
   padding: 1.875rem;
+}
+
+span.tagline {
+  font-weight:600;
+  font-size: 2rem;
 }
 
 .survey h4, .score h4{

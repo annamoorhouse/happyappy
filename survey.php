@@ -9,7 +9,6 @@
     <script src="js/vendor/modernizr.js"></script>
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300' rel='stylesheet' type='text/css'>
   </head>
   <body class="survey">
        
@@ -42,7 +41,7 @@
       <div class="row banner">
         <div class="medium-12 column.medium-centered">
           <div class="instructions">
-           <p><strong>Work your way through the app answering questions about your lifestyle.</strong> There are a few questions about you and your location that will be used to incorporate government data related to your region.<br/><br/>Please choose the best answer available for each question.</p>
+           <p><strong>Work your way through the app answering questions about your lifestyle.</strong><br/>There are a few questions about you and your location that will be used to incorporate government data related to your region.<br/><br/>Please choose the best answer available for each question.</p>
           </div> 
         </div>
       </div>
