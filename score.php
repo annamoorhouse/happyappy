@@ -253,6 +253,7 @@ $totalScore=round(($dHealth+$dPsych+$dEco)/3);
         <img src="img/bee-04.png"/>
       </div>
       </div>
+      <hr/>
        <footer class="row">
         <div class="large-12 columns">
           <div class="row">
