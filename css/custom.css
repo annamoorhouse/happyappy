@@ -84,3 +84,7 @@ footer .columns{
 select {
     background-color: #ffffff;
 }
+
+#bigrating { 
+  font-size: 8rem;
+}
