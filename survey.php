@@ -17,7 +17,7 @@
            
           <li class="name">
             <h1>
-              <a href="/">
+              <a href="http://yourbc.ca/beehappy">
                 <img src="img/wordmark.png" alt="beehappy wordmark">
               </a>
             </h1>
@@ -28,7 +28,7 @@
         <section class="top-bar-section">
            
           <ul class="left">
-            <li><a class="active" href="#">Home</a></li>
+            <li><a class="active" href="http://yourbc.ca/beehappy">Home</a></li>
             <li class="divider"></li>
             <li><a href="survey.php">Get Your Score</a></li>
             <li class="divider"></li>
@@ -229,21 +229,6 @@
                       <option value="16">8</option>
                       <option value="18">9</option>
                       <option value="20">10</option>
-                    </select>
-                  </label>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="medium-12 columns">
-                  <label>Do you have any long-term disabilities, health problems or mental health problems (health conditions that have lasted or are expected to last 6 months or over)?
-                    <select name="psych2" autocomplete="off" required>
-                      <option value="" selected="selected" disabled="disabled">Select</option>
-                      <option value="4">Very poor</option>
-                      <option value="8">Poor</option>
-                      <option value="12">Neither poor nor good</option>
-                      <option value="16">Good</option>
-                      <option value="20">Very good</option>
                     </select>
                   </label>
           </div>
