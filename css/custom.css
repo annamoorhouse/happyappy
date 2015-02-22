@@ -94,3 +94,5 @@ select {
 #bigrating { 
   font-size: 8rem;
 }
+
+.mediumrating { font-size: 5rem; }
