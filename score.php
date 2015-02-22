@@ -93,7 +93,16 @@ function scoreProxToParks(){
       $hits++;
     }
   }
-  return $hits;
+  if ($hits == 0){
+    $prox=0;
+  } elseif ($hits == 1){
+    $prox=10;
+  } else if ($hits == 2){
+    $prox=12.5;
+  } elseif ($hits >= 3){
+    $prox=15;
+  }
+  return $prox;
 }
 
 //This function queries google maps API and grabs the latitude and longitude of a person based on their chosen city.
@@ -170,12 +179,34 @@ function scoreBMI(){
       }
     }
   }
-
 }
+
+/* =========================================================================== */
+//Add up the survey questions.
+
+function scoreSurvey(){
+  $surveyScore=$_POST['general-health']+$_POST['longterm-dis']+$_POST['drunk']+$_POST['cigarettes']+$_POST['smoke-home']+$_POST['secondhand-smoke'];
+  return $surveyScore;
+}
+function scoreEcoSurvey(){
+  $surveyScore=$_POST['environmentalism']+$_POST['parks']+$_POST['travel'];
+  return $surveyScore;
+}
+
+/* ============================================================================ */
+//Let's add up all the health domain scores.
+
 $lifeExpectancy=scoreLifeExpectancy();
 $proximityToParks=scoreProxToParks(); 
+
 $BMI=scoreBMI();
-$dHealth=round($lifeExpectancy+$BMI);
+$surveyAnswers=scoreSurvey();
+$dEcoAnswers=scoreEcoSurvey();
+$dHealth=round($lifeExpectancy+$BMI+$surveyAnswers);
+$dEcology=round($proximityToParks+$dEcoAnswers);
+
+
+
 ?>
       <div class="row">
       <div class="medium-12 columns">
@@ -188,8 +219,28 @@ $dHealth=round($lifeExpectancy+$BMI);
       <div class="medium-12 columns">
       <h4>Details</h4>
       </div>
-      <div class="medium-4">
-
+      </div>
+      <div class="row" data-equalizer>
+      <div class="medium-4 columns">
+      <div class="panel" data-equalizer-watch>
+      <h3>Domain: Health</h3>
+      <p>The health domain combines data from government datasets, and your input to create a score for your general health.</p>
+      <center><div class="mediumrating"><?php echo $dHealth; ?></div></center>
+      </div>
+      </div>
+      <div class="medium-4 columns">
+      <div class="panel" data-equalizer-watch>
+      <h3>Domain: Ecological Diversity and Resilience</h3>
+      <p>This domain uses government data and your input to give a picture of your relationship with your environment.</p>
+      <center><div class="mediumrating"><?php echo $dEcology; ?></div></center>
+      </div>
+      </div>
+      <div class="medium-4 columns">
+      <div class="panel" data-equalizer-watch>
+      <h3>Domain: Psychological Wellbeing</h3>
+      <p>This domain takes your input and scores on your psychological wellbeing.</p>
+      <center><div class="mediumrating"><?php echo $dHealth; ?></div></center>
+      </div>
       </div>
       </div>
        <footer class="row">

@@ -51,12 +51,12 @@ a:hover{
 }
 
 .index .columns{
-    padding: 1.875rem;
+    /* padding: 1.875rem; */
 }
 
 .survey .columns{
-    padding-left: 1.875rem;
-    padding-right: 1.875rem;
+   /* padding-left: 1.875rem;
+    padding-right: 1.875rem; */
 }
 
 
@@ -74,7 +74,7 @@ footer .columns{
   font-size: 1.2rem;
 }
 
-.survey h4, .score h4{{
+.survey h4, .score h4{
   color: #f04124;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem;
@@ -87,4 +87,8 @@ select {
 
 #bigrating { 
   font-size: 8rem;
+}
+
+.mediumrating { 
+  font-size: 5rem;
 }
