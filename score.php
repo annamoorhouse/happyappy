@@ -10,7 +10,7 @@
 
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
   </head>
-  <body>
+  <body class="score">
        
       <nav class="top-bar" data-topbar>
         <ul class="title-area">
@@ -179,14 +179,19 @@ $dHealth=round($lifeExpectancy+$BMI);
 ?>
       <div class="row">
       <div class="medium-12 columns">
-        <center><h1>Your subset GNH Rating is</h1>
+        <center><h1>Your (sort of) GNH Rating is</h1>
         <div id="bigrating"><?php echo $dHealth; ?></div>
         <a class="button" href="/">Share on Twitter</a><a class="button" href="/">Share on Facebook</a> 
         </center>
 
       </div>
+      <div class="medium-12 columns">
+      <h4>Details</h4>
       </div>
+      <div class="medium-4">
 
+      </div>
+      </div>
        <footer class="row">
         <div class="large-12 columns">
           <div class="row">
